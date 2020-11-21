@@ -20,7 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="697cbecb-ab7a-4d0a-a1fc-87863826391f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/packages/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/__client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/client/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/client/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/client/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/client/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/client/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,8 +82,24 @@
       <workItem from="1605857734981" duration="2404000" />
       <workItem from="1605893204109" duration="581000" />
       <workItem from="1605958463658" duration="3436000" />
-      <workItem from="1605970751816" duration="1539000" />
+      <workItem from="1605970751816" duration="2189000" />
+      <workItem from="1605977982435" duration="301000" />
     </task>
+    <task id="LOCAL-00001" summary="[FEATURE]create react app whith typescript template and fix issue &gt; https://github.com/facebook/create-react-app/issues/9868#issuecomment-731579629">
+      <created>1605972399407</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605972399407</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[FEATURE]create react app whith typescript template and fix issue &gt; https://github.com/facebook/create-react-app/issues/9868#issuecomment-731579629">
+      <created>1605972423544</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605972423544</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,11 +117,15 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[FEATURE]create react app whith typescript template and fix issue &gt; https://github.com/facebook/create-react-app/issues/9868#issuecomment-731579629" />
+    <option name="LAST_COMMIT_MESSAGE" value="[FEATURE]create react app whith typescript template and fix issue &gt; https://github.com/facebook/create-react-app/issues/9868#issuecomment-731579629" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="454" y="276" key="Vcs.Push.Dialog.v2" timestamp="1605857748250">
+    <state x="454" y="276" key="Vcs.Push.Dialog.v2" timestamp="1605972425384">
       <screen x="29" y="23" width="1651" height="1027" />
     </state>
-    <state x="454" y="276" key="Vcs.Push.Dialog.v2/1680.23.1920.1057/29.23.1651.1027@29.23.1651.1027" timestamp="1605857748250" />
+    <state x="454" y="276" key="Vcs.Push.Dialog.v2/1680.23.1920.1057/29.23.1651.1027@29.23.1651.1027" timestamp="1605972425384" />
     <state x="552" y="291" width="604" height="490" key="find.popup" timestamp="1605863151546">
       <screen x="29" y="23" width="1651" height="1027" />
     </state>
