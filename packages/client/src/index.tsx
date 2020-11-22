@@ -11,6 +11,31 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+/*
+client
+  .query({
+    query: gql`
+        query allPokemons{
+            pokemons {
+                edges {
+                    cursor
+                    node {
+                        id
+                        name
+                        types
+                    }
+                }
+                pageInfo {
+                    endCursor
+                    hasNextPage
+                }
+            }
+        }
+    `
+  })
+  .then(result => console.log(result));
+*/
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

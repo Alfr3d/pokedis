@@ -1,0 +1,11 @@
+query byType {
+    pokemonsByType(type: "Grass") {
+        edges {
+            node {
+                id
+                name
+                types
+            }
+        }
+    }
+}

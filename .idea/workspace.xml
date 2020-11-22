@@ -20,18 +20,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="697cbecb-ab7a-4d0a-a1fc-87863826391f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.graphqlconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/client/src/components/Loader/Loader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/client/src/components/Loader/Loader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/client/src/constants/allPokemons.graphql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/client/src/constants/queryByType.graphql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/client/src/graphql/Client.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/client/src/styles/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/client/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/client/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/client/src/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/client/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/client/src/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/client/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/client/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="GraphQL File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -64,6 +75,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/client/src/graph" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/packages/client" />
     </key>
@@ -83,7 +98,8 @@
       <workItem from="1605893204109" duration="581000" />
       <workItem from="1605958463658" duration="3436000" />
       <workItem from="1605970751816" duration="2189000" />
-      <workItem from="1605977982435" duration="301000" />
+      <workItem from="1605977982435" duration="5608000" />
+      <workItem from="1606039073217" duration="7822000" />
     </task>
     <task id="LOCAL-00001" summary="[FEATURE]create react app whith typescript template and fix issue &gt; https://github.com/facebook/create-react-app/issues/9868#issuecomment-731579629">
       <created>1605972399407</created>
@@ -99,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605972423544</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[FEATURE]yarn add &#10;- apollo client&#10;- antd&#10;- node sass">
+      <created>1605978362318</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605978362318</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,13 +142,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[FEATURE]create react app whith typescript template and fix issue &gt; https://github.com/facebook/create-react-app/issues/9868#issuecomment-731579629" />
-    <option name="LAST_COMMIT_MESSAGE" value="[FEATURE]create react app whith typescript template and fix issue &gt; https://github.com/facebook/create-react-app/issues/9868#issuecomment-731579629" />
+    <MESSAGE value="[FEATURE]yarn add &#10;- apollo client&#10;- antd&#10;- node sass" />
+    <option name="LAST_COMMIT_MESSAGE" value="[FEATURE]yarn add &#10;- apollo client&#10;- antd&#10;- node sass" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="454" y="276" key="Vcs.Push.Dialog.v2" timestamp="1605972425384">
+    <state x="579" y="345" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606047096426">
       <screen x="29" y="23" width="1651" height="1027" />
     </state>
-    <state x="454" y="276" key="Vcs.Push.Dialog.v2/1680.23.1920.1057/29.23.1651.1027@29.23.1651.1027" timestamp="1605972425384" />
+    <state x="579" y="345" key="#com.intellij.fileTypes.FileTypeChooser/1680.23.1920.1057/29.23.1651.1027@29.23.1651.1027" timestamp="1606047096426" />
+    <state x="761" y="487" key="#com.intellij.ide.util.TreeDirectoryChooserDialog" timestamp="1606040167121">
+      <screen x="29" y="23" width="1651" height="1027" />
+    </state>
+    <state x="761" y="487" key="#com.intellij.ide.util.TreeDirectoryChooserDialog/1680.23.1920.1057/29.23.1651.1027@29.23.1651.1027" timestamp="1606040167121" />
+    <state x="129" y="123" width="1450" height="827" key="DiffContextDialog" timestamp="1605979225381">
+      <screen x="29" y="23" width="1651" height="1027" />
+    </state>
+    <state x="129" y="123" width="1450" height="827" key="DiffContextDialog/1680.23.1920.1057/29.23.1651.1027@29.23.1651.1027" timestamp="1605979225381" />
+    <state x="454" y="276" key="Vcs.Push.Dialog.v2" timestamp="1605978365140">
+      <screen x="29" y="23" width="1651" height="1027" />
+    </state>
+    <state x="454" y="276" key="Vcs.Push.Dialog.v2/1680.23.1920.1057/29.23.1651.1027@29.23.1651.1027" timestamp="1605978365140" />
     <state x="552" y="291" width="604" height="490" key="find.popup" timestamp="1605863151546">
       <screen x="29" y="23" width="1651" height="1027" />
     </state>

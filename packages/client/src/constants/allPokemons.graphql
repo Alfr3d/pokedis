@@ -1,0 +1,16 @@
+query allPokemons{
+    pokemons {
+        edges {
+            cursor
+            node {
+                id
+                name
+                types
+            }
+        }
+        pageInfo {
+            endCursor
+            hasNextPage
+        }
+    }
+}
