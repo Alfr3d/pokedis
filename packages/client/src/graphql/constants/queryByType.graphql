@@ -1,0 +1,11 @@
+query FindPokemonByType($type: String!) {
+    pokemonsByType(type: $type) {
+        edges {
+            node {
+                id
+                name
+                types
+            }
+        }
+    }
+}

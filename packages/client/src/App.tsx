@@ -1,14 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
-import Loader from "./components/Loader/Loader";
+import PokemonSearch from "./components/pokemon-search/pokemon-search";
+import Home from "./pages/home";
 import { ApolloProvider } from '@apollo/client';
-import client from './graphql/Client'
+import ClientConnector from './graphql/client-connector';
 
 function App() {
   return (
-    <ApolloProvider client={client}>
-      <Loader></Loader>
+    <ApolloProvider client={ClientConnector}>
+      <Home />
     </ApolloProvider>
   );
 }

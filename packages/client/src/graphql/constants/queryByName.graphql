@@ -1,5 +1,5 @@
-query byType {
-    pokemonsByType(type: "Grass") {
+query FindPokemonByName($name: String) {
+    pokemons(q: $name) {
         edges {
             node {
                 id
