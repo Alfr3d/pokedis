@@ -1,5 +1,5 @@
 query FindPokemonByName($name: String) {
-    pokemons(q: $name) {
+    pokemons(q: $name, limit: 20) {
         edges {
             node {
                 id

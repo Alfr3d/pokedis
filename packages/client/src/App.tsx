@@ -9,6 +9,7 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
+import PokemonSearch from "./components/pokemon-search/pokemon-search";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
             about
           </Route>
           <Route path="/search">
-            <SearchPage />
+            <PokemonSearch />
           </Route>
           <Route path="/">
             <Home />

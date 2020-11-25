@@ -20,9 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="697cbecb-ab7a-4d0a-a1fc-87863826391f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/packages/client/src/components/pokemon-search/pokemon-by-name.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/client/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/client/src/graphql/Client.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/client/src/graphql/Client.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/client/src/components/pokemon-detail/pokemon-detail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/client/src/components/pokemon-detail/pokemon-detail.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/client/src/components/pokemon-search/pokemon-search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/client/src/components/pokemon-search/pokemon-search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/client/src/graphql/constants/allPokemons.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/packages/client/src/graphql/constants/allPokemons.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/client/src/graphql/constants/queryByName.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/packages/client/src/graphql/constants/queryByName.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/client/src/pages/home/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/client/src/pages/home/home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/client/src/pages/search-page/search-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/client/src/pages/search-page/search-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/client/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +63,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/packages/client" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/packages/client/src/components/pokemon-detail/images/188915-pokemon-go" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -67,12 +75,18 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/packages/client/src/graph" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/client/src/components/pokemon-detail/images/188915-pokemon-go" />
+      <recent name="$PROJECT_DIR$/packages/client/src/components/pokemon-detail" />
+      <recent name="$PROJECT_DIR$/packages/client/src/assets/images/188915-pokemon-go" />
       <recent name="$PROJECT_DIR$/packages/client" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/client/src/pages/home" />
+      <recent name="$PROJECT_DIR$/packages/client/src/components/pokemon-detail/images/188915-pokemon-go" />
+      <recent name="$PROJECT_DIR$/packages/client/src/components/pokemon-detail/images" />
+      <recent name="$PROJECT_DIR$/packages/client" />
+      <recent name="$PROJECT_DIR$/packages/client/src/graphql" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -93,6 +107,10 @@
       <workItem from="1605977982435" duration="5608000" />
       <workItem from="1606039073217" duration="7822000" />
       <workItem from="1606068051437" duration="1531000" />
+      <workItem from="1606144965745" duration="18668000" />
+      <workItem from="1606210048392" duration="6178000" />
+      <workItem from="1606223344724" duration="14509000" />
+      <workItem from="1606245963381" duration="16234000" />
     </task>
     <task id="LOCAL-00001" summary="[FEATURE]create react app whith typescript template and fix issue &gt; https://github.com/facebook/create-react-app/issues/9868#issuecomment-731579629">
       <created>1605972399407</created>
@@ -115,7 +133,35 @@
       <option name="project" value="LOCAL" />
       <updated>1605978362318</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[FEATURE]new components">
+      <created>1606145186585</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606145186585</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[FEATURE]home pages, fragment, pokemon detail, others.">
+      <created>1606224653637</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606224653637</updated>
+    </task>
+    <task id="LOCAL-00006" summary="[FEATURE]&#10;- layout&#10;- assest&#10;- other">
+      <created>1606283512800</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606283512801</updated>
+    </task>
+    <task id="LOCAL-00007" summary="[FEATURE]&#10;- search page">
+      <created>1606290912903</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606290912903</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,15 +180,21 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="[FEATURE]create react app whith typescript template and fix issue &gt; https://github.com/facebook/create-react-app/issues/9868#issuecomment-731579629" />
     <MESSAGE value="[FEATURE]yarn add &#10;- apollo client&#10;- antd&#10;- node sass" />
-    <option name="LAST_COMMIT_MESSAGE" value="[FEATURE]yarn add &#10;- apollo client&#10;- antd&#10;- node sass" />
+    <MESSAGE value="[FEATURE]new components" />
+    <MESSAGE value="[FEATURE]home pages, fragment, pokemon detail, others." />
+    <MESSAGE value="[FEATURE]&#10;- layout&#10;- assest&#10;- other" />
+    <MESSAGE value="[FEATURE]&#10;- search page" />
+    <option name="LAST_COMMIT_MESSAGE" value="[FEATURE]&#10;- search page" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="579" y="345" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606047096426">
+    <state x="579" y="345" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606234375359">
       <screen x="29" y="23" width="1651" height="1027" />
     </state>
-    <state x="579" y="345" key="#com.intellij.fileTypes.FileTypeChooser/1680.23.1920.1057/29.23.1651.1027@29.23.1651.1027" timestamp="1606047096426" />
+    <state x="579" y="345" key="#com.intellij.fileTypes.FileTypeChooser/1680.23.1920.1057/29.23.1651.1027@29.23.1651.1027" timestamp="1606234375359" />
     <state x="761" y="487" key="#com.intellij.ide.util.TreeDirectoryChooserDialog" timestamp="1606040167121">
       <screen x="29" y="23" width="1651" height="1027" />
     </state>
@@ -151,10 +203,27 @@
       <screen x="29" y="23" width="1651" height="1027" />
     </state>
     <state x="129" y="123" width="1450" height="827" key="DiffContextDialog/1680.23.1920.1057/29.23.1651.1027@29.23.1651.1027" timestamp="1605979225381" />
-    <state x="454" y="276" key="Vcs.Push.Dialog.v2" timestamp="1605978365140">
+    <state width="1630" height="280" key="GridCell.Tab.0.bottom" timestamp="1606240811893">
       <screen x="29" y="23" width="1651" height="1027" />
     </state>
-    <state x="454" y="276" key="Vcs.Push.Dialog.v2/1680.23.1920.1057/29.23.1651.1027@29.23.1651.1027" timestamp="1605978365140" />
+    <state width="1630" height="280" key="GridCell.Tab.0.bottom/1680.23.1920.1057/29.23.1651.1027@29.23.1651.1027" timestamp="1606240811893" />
+    <state width="1630" height="280" key="GridCell.Tab.0.center" timestamp="1606240811893">
+      <screen x="29" y="23" width="1651" height="1027" />
+    </state>
+    <state width="1630" height="280" key="GridCell.Tab.0.center/1680.23.1920.1057/29.23.1651.1027@29.23.1651.1027" timestamp="1606240811893" />
+    <state width="1630" height="280" key="GridCell.Tab.0.left" timestamp="1606240811893">
+      <screen x="29" y="23" width="1651" height="1027" />
+    </state>
+    <state width="1630" height="280" key="GridCell.Tab.0.left/1680.23.1920.1057/29.23.1651.1027@29.23.1651.1027" timestamp="1606240811893" />
+    <state width="1630" height="280" key="GridCell.Tab.0.right" timestamp="1606240811893">
+      <screen x="29" y="23" width="1651" height="1027" />
+    </state>
+    <state width="1630" height="280" key="GridCell.Tab.0.right/1680.23.1920.1057/29.23.1651.1027@29.23.1651.1027" timestamp="1606240811893" />
+    <state x="454" y="276" key="Vcs.Push.Dialog.v2" timestamp="1606290917096">
+      <screen x="29" y="23" width="1651" height="1027" />
+    </state>
+    <state x="454" y="276" key="Vcs.Push.Dialog.v2/1680.23.1920.1057/29.23.1651.1027@29.23.1651.1027" timestamp="1606290917096" />
+    <state x="454" y="276" key="Vcs.Push.Dialog.v2/29.23.1651.1027@29.23.1651.1027" timestamp="1606283514023" />
     <state x="552" y="291" width="604" height="490" key="find.popup" timestamp="1605863151546">
       <screen x="29" y="23" width="1651" height="1027" />
     </state>

@@ -1,6 +1,7 @@
 import React, {useState, useEffect, useRef, FunctionComponent, SVGProps} from 'react';
 import { Card, Avatar } from 'antd';
 import './_pokemon-detail.scss';
+import pokePlaceholderIco from '../../assets/images/188915-pokemon-go/ultra-ball.svg';
 const { Meta } = Card;
 
 interface PokeProps {
@@ -14,7 +15,8 @@ const PokemonDetail: FunctionComponent<PokeProps> = ({ID, name, types, classific
   return (
     <Card style={{ width: 400 }} id={ID}>
       <Meta
-        avatar={<Icon name={name.toLowerCase()} />}
+        // avatar={<Icon name={name.toLowerCase()} />}
+        avatar={<Avatar src={pokePlaceholderIco} />}
         title={name}
         description={<div>
           <p><strong>Type: </strong>{types?.map(type => <span key={type.toString()}>{type},</span>)}</p>

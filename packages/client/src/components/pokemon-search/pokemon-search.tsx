@@ -1,34 +1,38 @@
-import React from "react";
-import { gql, useQuery } from '@apollo/client';
-import { loader } from 'graphql.macro';
-import Loading from '../../components/loading/loading';
+import React, {Fragment, useState} from "react";
 import './_pokemon-search.scss';
 import { Input } from 'antd';
-import PokemonDetail from "../../components/pokemon-detail/pokemon-detail";
+import {GetPokemonsByName} from "./pokemon-by-name";
 const { Search } = Input;
 
-interface SearchProps {
-  loading: boolean
-}
+
+interface SearchProps {}
 export type Procedure = (...args: any[]) => void;
 export type Options = {
   isImmediate: boolean,
 }
 
-const PokemonSearch: React.FC<SearchProps> = ({loading}) => {
+const PokemonSearch: React.FC<SearchProps> = () => {
+  const [value, setValue] = useState("");
+  const [dbValue, saveToDb] = useState("");
 
-  // @ts-ignore
-  const onSearch = e => {
-    console.log(e.target.value);
+  const handleChange = (event: any) => {
+    const { value: nextValue } = event.target;
+    setValue(nextValue);
+    debouncedFunction(nextValue);
   };
-  const debouncedFunction = debounce(onSearch, 1000);
+  const debouncedFunction = debounce((nextValue) => saveToDb(nextValue), 1000);
   return (
-    <Search placeholder="input search loading default"
-            allowClear
-            onChange={debouncedFunction}
-            loading={loading}
-      // onSearch={debouncedFunction}  The callback function triggered when you click on the search-icon, the clear-icon or press the Enter key
-    />
+    <Fragment>
+      <Search placeholder="input search loading default"
+              allowClear
+              onChange={handleChange}
+              value={value}
+              loading={false}
+        // onSearch={debouncedFunction}  The callback function triggered when you click on the search-icon, the clear-icon or press the Enter key
+      />
+      <GetPokemonsByName name={dbValue} call={false}/>
+    </Fragment>
+
   );
 };
 

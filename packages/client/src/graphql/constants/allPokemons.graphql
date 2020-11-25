@@ -1,5 +1,5 @@
 query allPokemons{
-    pokemons {
+    pokemons(limit: 20) {
         edges {
             cursor
             node {

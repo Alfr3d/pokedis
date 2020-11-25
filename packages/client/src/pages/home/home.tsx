@@ -6,17 +6,13 @@ import './_home.scss';
 import PokemonDetail from "../../components/pokemon-detail/pokemon-detail";
 import { Row, Col, Space } from 'antd';
 
-const allPokemon = loader('../../graphql/constants/allPokemons.graphql');
+const GET_ALL_POKEMONS = loader('../../graphql/constants/allPokemons.graphql');
 const Home = () => {
-    const {
-        data,
-        loading,
-        fetchMore,
-    } = useQuery(allPokemon);
+  const { loading, error, data, refetch } = useQuery(GET_ALL_POKEMONS);
 
-    if (loading) return <Loading />;
+  if (loading) return <Loading />;
 
-    // @ts-ignore
+  // @ts-ignore
     const nodes = data.pokemons.edges.map(edge => edge.node);
     console.log(nodes);
     // @ts-ignore
