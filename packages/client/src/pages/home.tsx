@@ -4,6 +4,8 @@ import { loader } from 'graphql.macro';
 import Loading from '../components/loading/loading';
 import './_home.scss';
 import PokemonDetail from "../components/pokemon-detail/pokemon-detail";
+import { Row, Col, Space } from 'antd';
+
 
 const allPokemon = loader('../graphql/constants/allPokemons.graphql');
 
@@ -20,13 +22,21 @@ const Home = () => {
     const nodes = data.pokemons.edges.map(edge => edge.node);
     console.log(nodes);
     // @ts-ignore
-    const listItems = nodes.map((d) => <PokemonDetail key={d.ID} name={d.name} types={d.types}></PokemonDetail>)
+    const listItems = nodes.map((d) =>
+        <Col span={8}>
+          <Space size="middle">
+            <PokemonDetail ID={d.ID} name={d.name} types={d.types} classification={d.classification}></PokemonDetail>
+          </Space>
+        </Col>
+    );
     console.log(listItems);
 
     return (
-      <div>
-          {listItems}
-      </div>
+      <Fragment>
+          <Row>
+              {listItems}
+          </Row>
+      </Fragment>
     );
 };
 

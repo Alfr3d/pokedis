@@ -1,15 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.scss';
-import PokemonSearch from "./components/pokemon-search/pokemon-search";
 import Home from "./pages/home";
 import { ApolloProvider } from '@apollo/client';
 import ClientConnector from './graphql/client-connector';
+import Layout from "./containers/layout";
+import {
+  Switch,
+  Route
+} from 'react-router-dom';
 
 function App() {
   return (
     <ApolloProvider client={ClientConnector}>
-      <Home />
+      <Layout>
+        <Switch>
+          <Route path="/about">
+            about
+          </Route>
+          <Route path="/users">
+            users
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Layout>
     </ApolloProvider>
   );
 }
