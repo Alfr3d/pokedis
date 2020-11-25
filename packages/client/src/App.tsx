@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.scss';
-import Home from "./pages/home";
+import Home from "./pages/home/home";
+import SearchPage from "./pages/search-page/search-page";
 import { ApolloProvider } from '@apollo/client';
 import ClientConnector from './graphql/client-connector';
 import Layout from "./containers/layout";
@@ -17,8 +18,8 @@ function App() {
           <Route path="/about">
             about
           </Route>
-          <Route path="/users">
-            users
+          <Route path="/search">
+            <SearchPage />
           </Route>
           <Route path="/">
             <Home />

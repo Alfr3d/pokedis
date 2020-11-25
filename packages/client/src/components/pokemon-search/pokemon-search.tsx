@@ -1,6 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
+import { gql, useQuery } from '@apollo/client';
+import { loader } from 'graphql.macro';
+import Loading from '../../components/loading/loading';
 import './_pokemon-search.scss';
 import { Input } from 'antd';
+import PokemonDetail from "../../components/pokemon-detail/pokemon-detail";
 const { Search } = Input;
 
 interface SearchProps {
@@ -12,6 +16,7 @@ export type Options = {
 }
 
 const PokemonSearch: React.FC<SearchProps> = ({loading}) => {
+
   // @ts-ignore
   const onSearch = e => {
     console.log(e.target.value);

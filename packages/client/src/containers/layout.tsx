@@ -47,10 +47,10 @@ const Layout = (props: React.PropsWithChildren<LayoutProps>) => {
               <Link to="/">Home</Link>
             </Menu.Item>
             <Menu.Item key="2">
-              <Link to="/about">Search</Link>
+              <Link to="/search">Search</Link>
             </Menu.Item>
             <Menu.Item key="3">
-              <Link to="/users">Users</Link>
+              <Link to="/about">About</Link>
             </Menu.Item>
           </Menu>
         </Sider>
