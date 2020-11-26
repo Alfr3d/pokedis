@@ -1,8 +1,26 @@
-.logo { display: flex; align-items: center; justify-content: center; height: 60px;}
-.logo img { width: 30px; height: 30px; }
+.logo { display: flex; align-items: center; justify-content: center; height: 60px; }
+.logo img { width: 30px; height: 30px; margin: 0 10px;}
+.logo img:hover { transform: scale(1); animation: pulse 2s infinite; }
 .ant-layout-header { color: white; font-weight: bold; }
 .ant-layout.ant-layout-has-sider { min-height: 100vh ;}
 .ant-layout.site-layout .ant-layout-content,
 .ant-layout.site-layout .ant-layout-content .ant-breadcrumb { margin: 0 16px; }
 .ant-layout.site-layout .ant-layout-content .ant-breadcrumb { padding: 16px 0;}
 .site-layout .site-layout-background { padding: 24px; min-height: 360px; }
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.90);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.90);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}

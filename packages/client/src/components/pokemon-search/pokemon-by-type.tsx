@@ -5,15 +5,14 @@ import {Col, Row, Space, Alert} from "antd";
 import PokemonDetail from "../pokemon-detail/pokemon-detail";
 import {loader} from "graphql.macro";
 
-const GET_POKEMONS_BY_NAME = loader('../../graphql/constants/queryByName.graphql');
+const GET_POKEMONS_BY_TYPE = loader('../../graphql/constants/queryByType.graphql');
 interface QueryProps {
-  name: String
+  type: String
 }
-export const GetPokemonsByName: React.FC<QueryProps> = ({name}) => {
+export const GetPokemonsByType: React.FC<QueryProps> = ({type}) => {
   const [nodes, setItem] = useState();
-  const [type, setType] = useState();
-  const { error, loading, data } = useQuery(GET_POKEMONS_BY_NAME, {
-    variables: { name }
+  const { error, loading, data } = useQuery(GET_POKEMONS_BY_TYPE, {
+    variables: { type }
   });
 
   useEffect(() => {
@@ -21,7 +20,6 @@ export const GetPokemonsByName: React.FC<QueryProps> = ({name}) => {
       // @ts-ignore
       const nodes = data?.pokemons?.edges.map(edge => edge.node);
       setItem(nodes);
-      console.log(nodes?.map((d: any) => d.types));
     }
   }, [data]);
 

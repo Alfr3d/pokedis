@@ -19,8 +19,11 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/search">
-            <PokemonSearch />
+          <Route path="/search/name">
+            <PokemonSearch by="name" />
+          </Route>
+          <Route path="/search/type">
+            <PokemonSearch by="type" />
           </Route>
           <Route path="/">
             <Home />
