@@ -28,15 +28,13 @@ export const GetPokemonsByType: React.FC<QueryProps> = ({type}) => {
 
   // @ts-ignore
   const listItems = nodes?.map((d) =>
-    <Col span={8}>
-      <Space size="middle">
-        <PokemonDetail key={d.ID} ID={d.ID} name={d.name} types={d.types} classification={d.classification} />
-      </Space>
+    <Col xs={24} lg={8}>
+      <PokemonDetail key={d.ID} ID={d.ID} name={d.name} types={d.types} classification={d.classification} />
     </Col>
   );
 
   return (
-    <Row>
+    <Row gutter={16}>
       {listItems}
     </Row>
   );

@@ -13,7 +13,7 @@ interface PokeProps {
 
 const PokemonDetail: FunctionComponent<PokeProps> = ({ID, name, types, classification} : PokeProps) => {
   return (
-    <Card style={{ width: 400 }} id={ID}>
+    <Card style={{ width: "100%" }} id={ID}>
       <Meta
         // avatar={<Icon name={name.toLowerCase()} />}
         avatar={<Avatar src={pokePlaceholderIco} />}

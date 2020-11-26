@@ -1,11 +1,11 @@
 import React, {Fragment, useState} from "react";
 import './_pokemon-search.scss';
-import {Input, Divider, Col, Row} from 'antd';
+import {Input, Divider, Col, Row, Typography} from 'antd';
 import {GetPokemonsByName} from "./pokemon-by-name";
 import {GetPokemonsByType} from "./pokemon-by-type";
+
 const { Search } = Input;
-
-
+const { Title } = Typography;
 interface SearchProps {
   by: String
 }
@@ -26,8 +26,9 @@ const PokemonSearch: React.FC<SearchProps> = ({by}) => {
   const debouncedFunction = debounce((nextValue) => saveToDb(nextValue), 1000);
   return (
     <Fragment>
+      <Title level={3}>Search by {by}</Title>
       <Row gutter={16}>
-        <Col span={6}>
+        <Col xs={24} lg={8}>
           <Input placeholder="Inserisci il nome del pokemon 🤙🏽"
                   allowClear
                   onChange={handleChange}
