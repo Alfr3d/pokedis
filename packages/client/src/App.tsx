@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.scss';
 import Home from "./pages/home/home";
-import SearchPage from "./pages/search-page/search-page";
 import { ApolloProvider } from '@apollo/client';
 import ClientConnector from './graphql/client-connector';
 import Layout from "./containers/layout";
@@ -10,6 +9,7 @@ import {
   Route
 } from 'react-router-dom';
 import PokemonSearch from "./components/pokemon-search/pokemon-search";
+import About from "./pages/about/about";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       <Layout>
         <Switch>
           <Route path="/about">
-            about
+            <About />
           </Route>
           <Route path="/search">
             <PokemonSearch />

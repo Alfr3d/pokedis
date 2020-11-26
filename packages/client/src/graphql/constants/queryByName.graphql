@@ -1,11 +1,15 @@
-query FindPokemonByName($name: String) {
-    pokemons(q: $name, limit: 20) {
+query FindPokemonByName($name: String, $cursor: ID) {
+    pokemons(q: $name, after: $cursor) {
         edges {
             node {
                 id
                 name
                 types
             }
+        }
+        pageInfo {
+            endCursor
+            hasNextPage
         }
     }
 }

@@ -1,6 +1,6 @@
 import React, {Fragment, useState} from "react";
 import './_pokemon-search.scss';
-import { Input } from 'antd';
+import {Input, Divider, Col, Row} from 'antd';
 import {GetPokemonsByName} from "./pokemon-by-name";
 const { Search } = Input;
 
@@ -23,14 +23,20 @@ const PokemonSearch: React.FC<SearchProps> = () => {
   const debouncedFunction = debounce((nextValue) => saveToDb(nextValue), 1000);
   return (
     <Fragment>
-      <Search placeholder="input search loading default"
-              allowClear
-              onChange={handleChange}
-              value={value}
-              loading={false}
-        // onSearch={debouncedFunction}  The callback function triggered when you click on the search-icon, the clear-icon or press the Enter key
-      />
-      <GetPokemonsByName name={dbValue} call={false}/>
+      <Row gutter={16}>
+        <Col span={8}>
+          <Input placeholder="Inserisci il nome del pokemon 🤙🏽"
+                  allowClear
+                  onChange={handleChange}
+                  value={value}
+          />
+        </Col>
+        <Col span={8}>
+          test
+        </Col>
+      </Row>
+      <Divider />
+      <GetPokemonsByName name={dbValue} />
     </Fragment>
 
   );
