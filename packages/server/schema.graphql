@@ -22,5 +22,6 @@ type PokemonsConnection {
 
 type Query {
   pokemons(q: String, after: ID, limit: Int): PokemonsConnection
-  pokemonsByType(type: String!, after: ID, limit: Int): PokemonsConnection
+  allPokemons(after: String, first: Int): PokemonsConnection
+  pokemonsByType(type: String!): PokemonsConnection
 }

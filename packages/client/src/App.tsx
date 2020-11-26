@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.scss';
-import Home from "./pages/home/home";
 import { ApolloProvider } from '@apollo/client';
 import ClientConnector from './graphql/client-connector';
 import Layout from "./containers/layout";
@@ -10,6 +9,7 @@ import {
 } from 'react-router-dom';
 import PokemonSearch from "./components/pokemon-search/pokemon-search";
 import About from "./pages/about/about";
+import Pagination from "./pages/home/pagination";
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
             <PokemonSearch by="type" />
           </Route>
           <Route path="/">
-            <Home />
+            <Pagination />
           </Route>
         </Switch>
       </Layout>

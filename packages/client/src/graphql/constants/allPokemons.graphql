@@ -1,11 +1,9 @@
-query allPokemons{
-    pokemons(limit: 20) {
+query allPokemons($after: ID, $limit: Int) {
+    pokemons(after: $after, limit: $limit ) {
         edges {
-            cursor
             node {
                 id
                 name
-                types
                 classification
             }
         }

@@ -5,6 +5,7 @@ query FindPokemonByName($name: String, $cursor: ID) {
                 id
                 name
                 types
+                classification
             }
         }
         pageInfo {

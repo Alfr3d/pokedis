@@ -4,6 +4,7 @@ query FindPokemonByType($type: String!) {
             node {
                 id
                 name
+                classification
                 types
             }
         }
